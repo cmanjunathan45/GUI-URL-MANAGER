@@ -110,7 +110,7 @@ def short():
 	entry=Entry(tk,width=70,borderwidth=10,font=("fontawesome",15,"bold italic"))
 	entry.grid(padx=90,rowspan=2,pady=20)
 	
-	option = ttk.Combobox(tk,value=OPTIONS)
+	option = ttk.Combobox(tk,value=OPTIONS,state='readonly')
 	option.current(0)
 	option.bind("<<ComboboxSelected>>",action)
 	option.grid()
@@ -215,7 +215,7 @@ def expand():
 	entry=Entry(tk,width=70,borderwidth=10,font=("fontawesome",15,"bold italic"))
 	entry.grid(padx=80,rowspan=2,pady=10)
 	
-	option = ttk.Combobox(tk,value=OPTIONS)
+	option = ttk.Combobox(tk,value=OPTIONS,state='readonly')
 	option.current(0)
 	option.bind("<<ComboboxSelected>>",action)
 	option.grid()
